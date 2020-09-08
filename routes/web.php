@@ -13,16 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/smk', function () {
-    return view('welcome');
-});
+// Route::get('/smk', function () {
+//     return view('/calculator');
+// });
 
-Route::get('/index', function () {
-    return view('index');
+Route::get('/calculator', function () {
+    return view('calculator');
 });
-Route::get('/error', function () {
-    return view("EROR");
-});
+// Route::get('/forms', 'FormController@index');
+// Route::post('/proses', 'FormController@proses');
+
+Route::post('/kalkulator', 'CalculatorController@OperasiKabataku'); 
+
+
 // Route::redirect('/error', '/index');
 
 
